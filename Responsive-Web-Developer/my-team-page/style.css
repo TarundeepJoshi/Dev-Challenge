@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: none;
+  }
+  
+  /* BODY */
+  body {
+    min-height: 100vh;
+    background: #FAFAFA;
+    padding: 1.3rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  }
+  
+  @media (min-width: 640px) {
+    body {
+      padding: 7.75rem 1.3rem 2.1rem 1.3rem;
+    }
+  }
+  
+  /* PRESENTATION */
+  .presentation-box {
+    max-width: 900px;
+    width: 100%;
+    margin-bottom: 4.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  @media (min-width: 640px) {
+    .presentation-box {
+        flex-direction: row;
+    }
+  }
+  
+  .presentation-box .title {
+    width: 100%;
+    font-family: "PT Serif", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    margin-bottom: 2.5rem;
+  }
+  
+  .presentation-box .subtitle-box {
+    width: 100%;
+  }
+  
+  .presentation-box .subtitle-box .subtitle {
+    font-size: 1.29rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .7rem;
+  }
+  
+  .presentation-box .subtitle-box .team-presentation {
+    font-size: 1rem;
+    font-weight: 400;
+    width: 85%;
+  }
+  
+  @media (min-width: 640px) {
+    .presentation-box .subtitle-box .team-presentation {
+      font-size: 1.29rem;
+    }
+  }
+  
+  /* MEMBERS */
+  .flex-container {
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    display: flex;
+  }
+  
+  .flex-container .member {
+    position: relative;
+    max-width: 240px;
+    width: 42%;
+    margin: 0 1rem .7rem 0;
+  }
+  
+  @media (max-width: 640px) {
+    .flex-container .member:nth-child(even) {
+      margin-top: 3.4rem;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .flex-container .member:nth-child(3n+2) {
+      margin-top: 7rem;
+    }
+  }
+  
+  .flex-container .member .member-job {
+    font-family: "PT Serif";
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 400;
+    white-space: nowrap;
+    position: absolute;
+    margin-left: 1.2rem;
+    transform-origin: 0 0;
+    transform: rotate(90deg);
+  }
+  
+  @media (min-width: 640px) {
+    .flex-container .member .member-job {
+      font-size: .95rem;
+      margin-left: 1.5rem;
+    }
+  }
+  
+  .flex-container .member .member-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: .2rem;
+  }
+  
+  @media (min-width: 640px) {
+    .flex-container .member .member-name {
+      font-size: 1.29rem;
+    }
+  }
+  
+  .flex-container .member .member-portrait {
+    width: 100%;
+  }
+  
+  /* FOOTER */
+  .end-footer {
+    flex-grow: 1;
+  }
+  
+  .footer {
+    justify-self: end;
+    margin-top: 6.2rem;
+  }
+  
+  .footer .dev-challenges-profile {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #A9A9A9;
+  }
+  
+  .footer .dev-challenges-profile:hover {
+    text-decoration: underline;
+  }
