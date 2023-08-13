@@ -9,7 +9,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.figma.com/file/F8d1qJsorEdY47N74HLxQ4/team-page-challenge?mode=dev">
+    <a href="https://www.figma.com/proto/3cf83hHRBAGjG5EKPcG2bV/interior-consultant-challenge?node-id=1-4&scaling=min-zoom&page-id=0%3A1">
       Demo
     </a>
     <span> | </span>
