@@ -1,0 +1,333 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body{
+	background: #181719;
+	
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Header{
+	height: 100px;
+	color: #FFF;
+}
+
+
+.logo{
+	font-family: "Crimson Pro";
+	font-size: 14px;
+	line-height: 20px;
+	float: left;
+	text-transform: uppercase;
+	border: 1px solid #FFF;
+	transform: translateY(35px);
+	padding: 5px;
+}
+
+.logo a{
+	color: #FFF;
+	text-decoration: none;
+
+}
+
+nav{
+	float: right;
+	display: flex;
+	line-height: 100px;
+}
+
+nav ul{
+	list-style-type: none;
+	display: flex;
+}
+
+nav ul li{
+	padding-left: 86px;
+}
+
+nav ul a{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+
+	color: #FFF;
+	text-decoration: none;
+	
+}
+
+nav .active{
+	font-weight: 700;
+}
+
+.show-menu{
+	float: right;
+}
+
+.show-menu i{
+	line-height: 100px;
+}
+
+.show-menu, .hide-menu{	
+	font-size: 30px;
+	transition: .5s;
+	cursor: pointer;
+	display: none;
+
+}
+
+nav ul a:hover,
+.show-menu:hover, 
+.hide-menu:hover{
+	color: #919191;
+	transition: .5s;
+}
+
+#check{
+	position: absolute;
+	visibility: hidden;
+}
+
+main{
+	color: #fff;
+}
+
+
+.Main{
+	display: flex;
+	margin-top: 90px;
+	margin-bottom: 150px;
+}
+
+.Main .main-content{
+	width: 35%;
+}
+
+.Main .main-image{
+	margin-left: auto;
+	width: 50%;
+
+	position: relative;
+	z-index: -999;
+
+}
+
+.Main .main-image img{
+	width: 100%;
+
+}
+
+.Main .main-content-header{
+	font-family: Lora;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 61px;
+	color: #FFFFFF;
+
+	margin-bottom: 40px;
+}
+
+.Main .main-content-p{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 29px;
+	margin-bottom: 30px;
+
+	color: #FFFFFF;
+}
+
+.Main .main-content a{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.Main .main-content a:hover{
+	color: #919191;
+	text-decoration: underline;
+}
+
+.Main .main-content i{
+	cursor: pointer;
+}
+
+.Main .card{
+	width: 80%;
+	transform: translate(20%,-50%);
+	padding: 15px 25px;
+	background-color: #181719;
+	position: absolute;
+
+}
+
+.Main .card .card-header{
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	margin-bottom: 20px;
+
+}
+
+.Main .card .card-header-img{
+	width: 15%;
+	margin-right: 10px;
+}
+
+
+.Main .card-header-img img{
+	border-radius: 100%;
+	width: 100%;
+
+}
+
+.Main .card .card-header-content h4{
+	font-family: "Montserrat";
+	font-size: 14px;
+	line-height: 17px;
+	color: #FFFFFF;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+.Main .card .card-header-content p{
+	font-family: "Montserrat";
+	font-size: 12px;
+	color: #828282;
+}
+
+.Main .card .card-main{
+	font-family: Lora;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 31px;
+	color: #FFFFFF;
+
+	width: 70%;
+}
+
+footer{
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #A9A9A9;
+	padding: 50px 0;
+}
+
+
+@media screen and (max-width: 800px){
+	.show-menu, .hide-menu{	
+		display: block;
+	}
+
+	nav{
+		flex-direction: column;
+		position: fixed;
+		background: #181719;
+		width: 100%;
+		height: 100vh;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 80px 0;
+		line-height: normal;
+		transition: 0.7s;
+
+	}
+
+	nav ul{
+		flex-direction: column;
+	}
+
+	nav ul li{
+		padding: 0;
+	}
+
+	nav ul a{
+		display: block;
+		padding: 20px 0;
+	}
+
+	.hide-menu{
+		position: absolute;
+		top: 35px;
+		right: 10px;
+	}
+
+	#check:checked ~ nav{
+		right: 0;
+		
+	}
+
+	.Main{
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	.Main .main-image{
+		margin-left: 0;
+		margin-top: 25px;
+		width: 100%;
+	}
+
+	.Main .main-content{
+		width: 100%;
+	}
+
+	.Main .main-content-header{
+		font-size: 36px;
+		line-height: 46px;
+		margin-bottom: 25px;
+	}
+
+	.Main .main-content-p{
+		font-size: 14px;
+		line-height: 17px;
+		margin-bottom: 25px;
+	}
+
+
+	.Main .card .card-header-content h4{
+		font-size: 12px;
+		margin-top: 0;
+	}
+
+	.Main .card .card-header-content p{
+		font-size: 10px;
+	}
+
+	.Main .card {
+		width: 70%;
+	}
+
+	.Main .card .card-main{
+		font-size: 14px;
+		width: 100%;
+	}
+
+
+}
+
+@media (max-width: 650px) {
+  .footer {
+    font-size: 12px;
+  }
+}
