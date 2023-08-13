@@ -13,7 +13,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://my-team-page0.netlify.app/">
+    <a href="https://interior-consultant0.netlify.app/">
       Solution
     </a>
     <span> | </span>
