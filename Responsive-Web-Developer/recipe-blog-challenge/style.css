@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: #FAFAFA;
+    padding: 24px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.heading h1{
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.sub__header{
+    display: flex;
+    margin: 0;
+    align-items: baseline;
+}
+
+.sub__header p{
+    margin-left: 12px;
+    font-family: Montserrat;
+    font-size: 0.6rem;
+    font-style: italic;
+    color: #4f4f4f;
+    font-weight: 500;
+} 
+
+.recipe-header-image{
+    margin-top: 1.8rem;
+}
+
+
+
+
+
+.serving-time-container i, .serving-time-container-2 i{
+    font-size: 1.1rem;
+}
+.serving-time-container{
+    font-family: Montserrat;
+    margin-top: 24px;
+}
+.serving-time-container h5{
+    color: #BDBDBD;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+.serving-time-container p{
+    font-size: 10px;
+}
+
+.servings{
+    display: flex;
+    align-items: center;
+}
+.servings i{
+    color: Orange;
+}
+.serving-details{
+    margin-left: 10px;
+}
+.serving-details p{
+    color: Orange;
+}
+
+
+.serving-time-container-2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.prep-timing, .cook-timing, .total-timing{
+    display: flex;
+    align-items: center;
+}
+
+.prep-timing-details, .cook-timing-details, .total-timing-details{
+    margin-left: 10px;
+}
+
+
+
+
+.ingredients-1{
+    margin-top: 30px;
+}
+.ingredients-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+.ingredients-heading-2{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.ingredients__checkbox{
+    display: flex;
+    font-family: Montserrat;
+    align-items: baseline;
+    margin-top: 14px;
+}
+
+.ingredients__checkbox label{
+    margin-left: 12px;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.ingredients-2{
+    margin-top: 42px;
+}
+.ingredients-2-heading{
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.instructions h3{
+    margin-top: 30px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+.instructions__list{
+    display: grid;
+    margin-top: 24px;
+    gap: 24px;
+}
+
+.instructions__list .list{
+    display: flex;
+}
+
+.list p{
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+.list .number{
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: #F2994A;
+    padding: 4px;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700; 
+}
+
+.source__link{
+    color: #BDBDBD;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;   
+}
+
+footer p a{
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+footer p a:hover{
+    color: black;
+}
+
+
+@media screen and (min-width: 768px) {
+    body{
+        background-color: white;
+    }
+
+    .heading h1{
+        font-size: 42px;
+    }
+
+    .sub__header p{
+        font-size: 15px;
+        inline-size: 40rem;
+    }
+
+    .ingredients-heading h1{
+        font-size: 32px;
+    }
+
+    .ingredients-heading-2 h2{
+        font-size: 30px;
+    }
+
+    .ingredients-1 label{
+        font-size: 18px;
+        inline-size: 40rem;
+    }
+
+    .ingredients-2 label{
+        font-size: 18px;
+        inline-size: 40rem;
+    }
+
+    .ingredients-1 label strong, .ingredients-2 label strong{
+        font-size: 18px;
+    }
+
+    .instructions h3{
+        font-size: 32px;
+    }
+
+    .instructions__list p{
+        font-size: 18px;
+        inline-size: 38rem;
+    }
+
+    footer p{
+        font-size: 26px;
+    }
+
+    .serving-time-container i{
+        font-size: 2rem;
+    }
+
+    .serving-time-container h5{
+        font-size: 16px;
+    }
+
+    .serving-time-container p{
+        font-size: 18px;
+    }
+
+    .servings{
+        grid-column: 1 / span 3;
+    }
+
+    .ingredients__card{
+        max-width: 230px;
+        max-height: 367px; 
+        display: grid;
+        gap: 40px;
+        border-radius: 12px;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+        padding: 50px 40px;
+        float: right;
+    }
+
+    .serving-time-container-2{
+        display: flex;
+        flex-direction: column;
+        inline-size: 10rem;
+    }
+
+    .servings{
+        margin-bottom: -2.5rem;
+    }
+
+    .prep-timing{
+        margin-bottom: 2rem;
+    }
+
+    .cook-timing{
+        margin-bottom: 2rem;
+    }
+}
