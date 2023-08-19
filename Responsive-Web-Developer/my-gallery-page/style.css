@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 1200px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.profile-image img{
+    border-radius: 16px;
+    width: 110px;
+    margin-bottom: 0.3rem;
+}
+
+.profile-image-details h1{
+    font-size: 18px;
+    margin-bottom: 0.2rem;
+    color: #4e5150;
+}
+
+.profile-image-details p{
+    color: #a9a9a9;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.profile-image-social{
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.posts, .followers, .following{
+    border-radius: 12px;
+    background: #E5E5E5;
+    width: 78px;
+    height: 52px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.posts h1, .followers h1, .following h1{
+    font-size: 13px;
+    color: #4e5150;
+}
+
+.posts p, .followers p, .following p{
+    font-size: 12px;
+    color: #7a7a7a;
+    font-weight: 600;
+}
+
+.images-container img{
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.images-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 960px;
+    margin: 0 auto 2rem;
+    gap: 1.7rem;
+    box-sizing: border-box;
+}
+
+.grid-span-col-2{
+    grid-column: span 2;
+}
+
+.grid-span-row-2{
+    grid-row: span 2;
+}
+
+footer p a{
+    text-decoration: none;
+    color: red;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+footer p a:hover{
+    color: black;
+}
+
+@media(max-width: 1050px)
+{
+    .images-container{
+        padding: 1rem;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .images-container{
+        gap: 0.4rem;
+        margin: 0;
+        padding: 1rem;
+    }
+}
