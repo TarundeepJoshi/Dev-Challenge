@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color: #4E5150;
+    --price-color: #f2994a;
+    --primary-color: #333;
+    --input-color: #828282;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding: 24px;
+    min-height: 100vh;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.heading-title h1{
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.items-container {
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+
+.items-container img{
+    border-radius: 12px;
+}
+.bag-image img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.first-item{
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.quantity-box-1{
+    margin-top: 22px;
+    border: 1px solid var(--input-color);
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-weight: 600;
+}
+.quantity-box-1 .add{
+    background-color: #dddddd;
+    color: var(--input-color);
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+.quantity-box-1 .sub{
+    background-color: #dddddd;
+    color: var(--input-color);
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+
+.shoes-image img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.second-item{
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.items-container h1{
+    font-size: 12px;
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.items-container span{
+    font-size: 14px;
+    color: var(--price-color);
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+.items-container del{
+    font-size: 10px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.line-1, .line-2{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 1px;
+    background-color: #bdbdbd;
+}
+
+.ship, .total{
+    display: flex;
+    justify-content: space-between;
+}
+
+.total h1, .ship h1{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.total p, .ship p{
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.contact-heading h1, .address-heading h1{
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.headings h1{
+    font-size: 10px;
+    color: #4f4f4f;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-details{
+    margin-bottom: 45px;
+}
+
+input::placeholder{
+    color: var(--input-color);
+    font-weight: 600;
+    font-family: Montserrat;
+    font-size: 10px;
+}
+
+input{
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--input-color);
+    padding: 12px 40px;
+}
+
+.email, .name, .address, .city, .country, .country, .postal{
+    margin-bottom: 1rem;
+}
+
+.front{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.save{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.tick{
+    width: 15px;
+    margin-right: 0.5rem;
+}
+.save p{
+    font-size: 10px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+button{
+    background-color: var(--price-color);
+    color: #fff;
+    border-radius: 12px;
+    font-family: Montserrat;
+    float: right;
+    padding: 17px 45px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color: black;
+    color: var(--price-color);
+}
+
+footer p a{
+    text-decoration: none;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+footer p a:hover{
+    color: black;
+}
+
+.contact-details span, .ship-address span{
+    position: absolute;
+    padding: 8.5px;
+    color: var(--input-color);
+}
+
+
+
+@media (min-width: 375px) and (max-width: 990px) {
+
+    .heading-title h1{
+        font-size: 32px;
+    }
+
+    .contact-heading h1, .address-heading h1{
+        font-size: 18px;
+    }
+
+    .headings h1{
+        font-size: 16px;
+    }
+
+    input{
+        padding: 15px 50px;
+    }
+
+    input::placeholder{
+        font-size: 13px;
+    }
+
+    .contact-details span, .ship-address span {
+        padding: 9.2px;
+        font-size: 1.8rem;
+    }
+
+    .save p{
+        font-size: 14px;
+    }
+
+    .items-container h1{
+        font-size: 18px;
+        margin-bottom: 0.5rem;
+    }
+
+    .bag-image img, .shoes-image img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .items-container span{
+        font-size: 18px;
+    }
+
+    .items-container del{
+        font-size: 14px;
+    }
+
+    .quantity-box-1{
+        padding: 12px 24px;
+    }
+
+    .items-container{
+        width: 21rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-item, .second-item{
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 1024px){
+    body{
+        padding: 2rem 2rem 0rem 2rem;
+    }
+
+    .items-container{
+        width: 22rem;
+        display: flex;
+        flex-direction: column;
+        margin-left: 35rem;
+    }
+
+    .first-item, .second-item{
+        display: flex;
+        align-items: center;
+    }
+
+    input{
+        width: 50%;
+    }
+
+    .postal{
+        margin-left: -15rem;
+        width: 96%;
+    }
+
+    button{
+        margin-right: 31rem;
+    }
+
+    .full-container-details{
+        margin-top: -28rem;
+    }
+
+    .items-container h1{
+        font-size: 20px;
+    }
+
+    .items-container span{
+        font-size: 18px;
+    }
+
+    .items-container del{
+        font-size: 14px;
+    }
+
+    .quantity-box-1{
+        padding: 12px 32px;
+    }
+    
+    .headings h1{
+        font-size: 0.9rem;
+    }
+
+    input::placeholder{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1150px) {
+    .items-container{
+        margin-left: 42rem;
+    }
+
+    .postal{
+        margin-left: -18rem;
+    }
+
+    button{
+        margin-right: 38rem;
+    }
+
+    .contact-heading h1, .address-heading h1{
+        font-size: 1.2rem;
+    }
+}
