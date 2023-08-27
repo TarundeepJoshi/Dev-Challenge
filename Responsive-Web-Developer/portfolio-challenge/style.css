@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root {
+    --color-1: #4f4f4f;
+    --color-2: #828282;
+    --color-3: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 24px;
+    font-family: 'Montserrat', sans-serif;
+    background: #F2F2F2;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* FIRST-PROFILE-BOX  */
+.first-container {
+    width: 1024px;
+    height: 311px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 40px;
+}
+
+.profile-image img {
+    width: 280px;
+    height: 265px;
+    float: left;
+    border-radius: 8px;
+    margin-right: 2rem;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile-details-header h2 {
+    color: var(--color-1);
+    margin-bottom: 4px;
+    font-size: 24px;
+}
+
+.profile-details-header p {
+    color: var(--color-2);
+}
+
+.profile-details {
+    margin-bottom: 37px;
+}
+
+.profile-contact-details img {
+    margin-right: 0.5rem;
+    margin-bottom: -0.2rem;
+}
+
+.profile-contact-details p {
+    margin-bottom: 10px;
+    color: var(--color-1);
+    font-weight: 500;
+}
+
+.profile-details-content {
+    color: var(--color-2);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.profile-details-content p {
+    margin-bottom: 2rem;
+}
+
+/* PROJECTS-BAR */
+.projects-progress {
+    width: 415.025px;
+    height: 303px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 23px;
+    margin-bottom: 40px;
+}
+
+.progress-heading h1 {
+    color: var(--color-1);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.react,
+.js,
+.vue,
+.redux,
+.native,
+.css {
+    /* display: flex; */
+    margin-bottom: 18px;
+}
+
+.bars {
+    width: 236.852px;
+    height: 9.602px;
+    background-color: #c4c4c4;
+    border-radius: 12px;
+    float: right;
+    transform: translateY(-0.8rem);
+}
+
+.react-bar-complete {
+    background-color: #2F80ED;
+    width: 155.768px;
+    height: 9.602px;
+    border-radius: 12px;
+}
+
+.js-bar-complete {
+    background-color: #2F80ED;
+    width: 198.444px;
+    border-radius: 12px;
+    height: 9.602px;
+}
+
+.css-bar-complete {
+    width: 218.715px;
+    height: 9.602px;
+    background-color: #2F80ED;
+    border-radius: 12px;
+}
+
+.vue-bar-complete {
+    width: 155.768px;
+    height: 9.602px;
+    background-color: #2F80ED;
+    border-radius: 12px;
+}
+
+.redux-bar-complete {
+    width: 198.444px;
+    height: 9.602px;
+    background-color: #2F80ED;
+    border-radius: 12px;
+}
+
+.native-bar-complete {
+    width: 218.715px;
+    height: 9.602px;
+    background-color: #2F80ED;
+    border-radius: 12px;
+}
+
+/* HOBBIES-BOX */
+.hobbies-box {
+    width: 415px;
+    height: 836px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 40px;
+    margin-top: -16.5rem;
+}
+
+.hobbies-heading h1 {
+    color: var(--color-1);
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.hobbies-box img {
+    width: 370px;
+    height: 150px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.gaming h1 {
+    color: var(--color-3);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.gaming p {
+    color: var(--color-2);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/* BLOG-PAGE */
+.blog-container {
+    width: 596px;
+    height: 560px;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.blog-image img {
+    width: 340px;
+    height: 290px;
+    transform: translateX(3.72rem);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-bottom: 50px;
+}
+
+.main-blog {
+    float: left;
+}
+
+.main-blog p {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.main-blog h1 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+    /* margin-bottom: 240px; */
+}
+
+.blog-details p {
+    font-size: 16px;
+    color: #828282;
+    margin-bottom: 2rem;
+    inline-size: 30rem;
+}
+
+.blog-details button {
+    border: none;
+    background-color: transparent;
+    color: #2F80ED;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.blog-details button:hover {
+    color: black;
+}
+
+/* EXPERIENCES-PAGE */
+.experience-box {
+    width: 592px;
+    height: 482px;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 40px;
+}
+
+.exp-heading h1 {
+    color: var(--color-1);
+    font-size: 24px;
+    margin-bottom: 44px;
+    font-weight: 500;
+}
+
+.adidas-image img {
+    float: left;
+    margin-right: 25px;
+}
+
+.adidas-details p {
+    color: var(--color-2);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.adidas-details h1 {
+    color: #333;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.adidas-details h2 {
+    inline-size: 23rem;
+    color: var(--color-2);
+    font-size: 16px;
+    font-weight: 500;
+    transform: translateX(5.3rem);
+    margin-bottom: 40px;
+}
+
+/* PROJECTS */
+.projects {
+    width: 1046px;
+    height: 115px;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 22px;
+    margin-bottom: 40px;
+}
+
+.project-heading h1 {
+    color: var(--color-1);
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.projects-buttons {
+    display: flex;
+}
+
+.projects-buttons button {
+    color: var(--color-1);
+    border-radius: 12px;
+    border: 1px solid #4F4F4F;
+    padding: 8px 22px;
+    margin-right: 16px;
+    font-weight: 500;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.projects-buttons button:hover {
+    background-color: #4F4F4F;
+    color: white;
+}
+
+.responsive-button button {
+    color: white;
+    background-color: #2F80ED;
+    border: 1px solid #2F80ED;
+    transition: all .3s ease-in-out;
+}
+
+.responsive-button button:hover {
+    background-color: #333;
+    color: #2F80ED;
+    border: none;
+}
+
+/* PROJECTS-CARDS */
+.card-1 {
+    width: 328.495px;
+    height: 545px;
+    border-radius: 12px;
+    background: #FFF;
+    padding: 18px;
+    margin-bottom: 40px;
+}
+
+.card-1-image img {
+    width: 292px;
+    height: 217px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.card-1-tags {
+    display: flex;
+}
+
+.card-1-tags p {
+    color: var(--color-1);
+    font-size: 16px;
+    margin-right: 10px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.card-1-details h1 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.card-1-details p {
+    color: var(--color-2);
+    font-size: 16px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.card-1-buttons button {
+    color: white;
+    background-color: #2F80ED;
+    border: none;
+    font-weight: 500;
+    padding: 13px 40px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 12px;
+    margin-right: 24px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.card-1-buttons button:hover {
+    color: #2F80ED;
+    background-color: #333;
+    border: none;
+}
+
+.card-1-buttons .code {
+    background-color: white;
+    color: #2F80ED;
+    border: 1px solid #2F80ED;
+}
+
+.projects-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+
+/* FOOTER */
+.footer-pages {
+    float: right;
+    transform: translateX(-10rem);
+}
+
+.footer-pages button {
+    margin-left: 10px;
+    border-radius: 4px;
+    border: 1px solid var(--color-1);
+    color: var(--color-1);
+    background-color: transparent;
+    padding: 11px 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all .2s ease-in-out;
+}
+
+.footer-pages button:hover {
+    background-color: #4F4F4F;
+    color: white;
+}
+
+.footer-pages span button {
+    background-color: #2F80ED;
+    border: none;
+    color: white;
+}
+
+.footer-pages span button:hover {
+    color: #2F80ED;
+    background-color: var(--color-1);
+}
+
+
+.first-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.second-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
