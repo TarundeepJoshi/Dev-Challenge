@@ -10,7 +10,7 @@
   <h3>
     <span> | </span>
     <a href="https://checkout-page0.netlify.app/">
-      Solution
+     My Solution
     </a>
     <span> | </span>
   </h3>
