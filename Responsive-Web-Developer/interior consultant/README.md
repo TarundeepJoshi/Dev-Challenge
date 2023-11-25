@@ -11,7 +11,7 @@
   <h3>
     <span> | </span>
     <a href="https://interior-consultant0.netlify.app/">
-      Solution
+     My Solution
     </a>
     <span> | </span>
   </h3>
