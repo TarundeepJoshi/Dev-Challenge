@@ -8,16 +8,10 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.figma.com/file/4B0x88GhiZvgVlcQPSQ73D/checkout-page-challenge?mode=dev">
-      Demo
-    </a>
     <span> | </span>
     <a href="https://checkout-page0.netlify.app/">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
-      Challenge
-    </a>
   </h3>
 </div>
