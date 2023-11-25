@@ -8,16 +8,10 @@
 
 <div align="center">
   <h3>
-    <a href="https://www.figma.com/file/2jVBTSKeCYF0dIN6fi0stX/recipe-blog-challenge?mode=dev">
-      Demo
-    </a>
     <span> | </span>
     <a href="https://recipe-blog-challenge0.netlify.app/">
-      Solution
+     My Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
-      Challenge
-    </a>
   </h3>
 </div>
