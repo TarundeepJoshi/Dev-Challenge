@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sora', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAF9;
+}
+
+img {
+    width: 356px;
+    height: 162px;
+    border-radius: 14px;
+    margin: 16px;
+}
+
+.card-container {
+    margin-top: 162px;
+    width: 390px;
+    height: 400px;
+    box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+    background-color: #FFFFFF;
+    border-radius: 18px;
+}
+
+.tag {
+    background-color: #E6D6FC;
+    display: flex;
+    margin-left: 16px;
+    border-radius: 16px;
+    padding: 6px 16px 6px 16px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.tag p {
+    font-size: 0.625rem;
+    font-weight: 700;
+    color: #883AE1;
+}
+
+.title p {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #20293A;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.desc p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #6C727F;
+    margin-top: 6px;
+    margin-left: 16px;
+    margin-bottom: 20px;
+}
+
+.name p{
+    border-top: 1px solid #E5EAF0;
+    color: #6C727F;
+    font-size: 0.75rem;
+    margin-top: 20px;
+    padding: 16px 16px;
+    display: flex;
+    align-items: flex-end;
+}
+
+@media (max-width: 406px) {
+    .card-container {
+        width: 310px;
+        height: 380px;
+    }
+
+    img {
+        width: 280px;
+        margin: 14px;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .desc p{
+        font-size: 13px;
+    }
+
+    .name p{
+        border-top: 1px solid #E5EAF0;
+        color: #6C727F;
+        font-size: 0.75rem;
+        margin-top: 20px;
+        padding: 12px 16px;
+        display: flex;
+        align-items: flex-end;
+    }
+}
