@@ -9,7 +9,7 @@
 <div align="center">
   <h3>
     <span> | </span>
-    <a href="https://recipe-blog-challenge0.netlify.app/">
+    <a href="https://business-blog-card0.netlify.app/>
      My Solution
     </a>
     <span> | </span>
