@@ -75,7 +75,7 @@ body {
 @media (min-width: 320px) and (max-width: 420px) {
     .container {
         width: 19rem;
-        height: 25rem;
+        height: 26rem;
     }
 
     .card-content h1 {
